@@ -12,6 +12,7 @@ nav>div button.nav-item.nav-link, nav>div button.nav-item.nav-link.active {
   background: #272e38;
   border-radius: 0;
   border-right: 1px solid #fff;
+  cursor: pointer;
 }
 
 nav>div button.nav-item.nav-link.active:after {

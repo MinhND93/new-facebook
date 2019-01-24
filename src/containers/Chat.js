@@ -25,7 +25,7 @@ class ChatComponent extends Component {
               <div className="panel-body">
                 {
                   message.map(mes =>
-                    <div key={mes.id} className="clearfix">
+                    <div key={mes.id} className="clearfix message">
                       <blockquote className={mes.from === currentUser.id ? "me pull-right" : "you pull-left"}>{mes.content}
                       </blockquote>
                     </div>
@@ -35,9 +35,9 @@ class ChatComponent extends Component {
               <div className="panel-footer">
                 <div className="input-group">
                   <div className="input-group-append">
-                    <span className="input-group-text attach_btn"></span>
+                    <span className="input-group-text left_btn"></span>
                   </div>
-                  <textarea onKeyPress={($event) => onKeyPress($event, currentUser)} name="" className="form-control type_msg" placeholder="Press enter to send"></textarea>
+                  <textarea onKeyPress={($event) => onKeyPress($event, currentUser)} className="form-control type_msg" placeholder="Press enter to send"></textarea>
                   <div className="input-group-append">
                     <span onClick={() => this.props.fetchData()} className="input-group-text reload_btn">Get Latest Messages</span>
                   </div>
