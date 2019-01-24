@@ -1,0 +1,57 @@
+.listing-block {
+    padding-top: 20px;
+    overflow-y: scroll;
+    max-height: calc(100vh - 70px);
+}
+
+.media {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.media img {
+    width: 200px;
+    margin: 0;
+    height: 136px;
+}
+
+.media-body {
+    border: 1px solid #bcbcbc;
+    border-left: 0;
+    height: 136px;
+}
+
+.media .name {
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    color: #4765AB;
+}
+
+.media .mutual {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.media .mutual span {
+    float: left;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.media .mutual span i {
+    margin-right: 7px;
+    color: #4765AB;
+}
+
+.media .address {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #888;
+}
