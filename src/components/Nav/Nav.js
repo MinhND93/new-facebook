@@ -14,8 +14,9 @@ class Nav extends Component {
         if (page !== '/login') {
             this.props.history.push(page);
         } else {
-            //Reload page
-            window.location.href = page
+            //Logout
+            localStorage.removeItem('user');
+            window.location.href = page;
         }
     }
     render() {
